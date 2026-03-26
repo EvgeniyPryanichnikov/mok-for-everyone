@@ -1,0 +1,154 @@
+[
+  {
+    "id": "ts-001",
+    "topic": "typescript",
+    "question": "В чем разница между interface и type в TypeScript?",
+    "answer": "Оба описывают типы, но interface лучше подходит для объектных контрактов и declaration merging, а type удобен для union/intersection и сложных алиасов.",
+    "tags": ["interface", "type-alias"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-003",
+    "topic": "typescript",
+    "question": "Во что компилируется type и interface?",
+    "answer": "type и interface существуют только на этапе типов и полностью удаляются при компиляции в JavaScript.",
+    "tags": ["compilation", "types"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-002",
+    "topic": "typescript",
+    "question": "Enum и во что компилируется?",
+    "answer": "enum в TypeScript компилируется в JavaScript-объект (для numeric enum часто с обратным маппингом), а const enum обычно инлайнится на этапе компиляции.",
+    "tags": ["enum", "compilation"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-004",
+    "topic": "typescript",
+    "question": "any vs unknown vs never",
+    "answer": "any отключает проверку типов, unknown требует сужения перед использованием, never обозначает невозможное значение (функция не возвращает или ветка недостижима).",
+    "tags": ["any", "unknown", "never"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-005",
+    "topic": "typescript",
+    "question": "Что такое дженерики?",
+    "answer": "Дженерики позволяют писать переиспользуемые типобезопасные функции/типы/классы с параметрами типов, сохраняя связь между входом и выходом.",
+    "tags": ["generics"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-007",
+    "topic": "typescript",
+    "question": "Разница между keyof и typeof",
+    "answer": "typeof получает тип по значению (переменной/объекту), keyof возвращает union ключей у типа.",
+    "tags": ["keyof", "typeof"],
+    "level": "medium"
+  },
+  {
+    "id": "ts-006",
+    "topic": "typescript",
+    "question": "Что такое extends в TS? Наследование или сужение типа?",
+    "answer": "В зависимости от контекста: в interface/class — расширение контракта, в generic constraints — ограничение типа параметра, в conditional types — проверка/ветвление по совместимости.",
+    "tags": ["extends", "generics", "conditional-types"],
+    "level": "medium"
+  },
+  {
+    "id": "ts-008",
+    "topic": "typescript",
+    "question": "Что такое вспомогательные типы (Utility Types)?",
+    "answer": "Это встроенные типы-помощники (Partial, Pick, Omit, Record, Required, ReturnType и др.) для преобразования и композиции типов без дублирования.",
+    "tags": ["utility-types"],
+    "level": "medium"
+  },
+  {
+    "id": "ts-009",
+    "topic": "typescript",
+    "question": "Использование any и as: когда допустимо и какие риски?",
+    "answer": "Использовать точечно на границах системы (внешние API/legacy), но минимизировать: any ломает типобезопасность, as может скрыть ошибку, если приведение неверно.",
+    "tags": ["any", "type-assertion", "as"],
+    "level": "medium"
+  },
+  {
+    "id": "ts-010",
+    "topic": "typescript",
+    "question": "Что такое TypeScript, какие проблемы он решает, какие имеет плюсы и минусы?",
+    "answer": "TypeScript добавляет статическую типизацию к JavaScript, помогает ловить ошибки раньше и улучшает поддержку IDE; минусы — дополнительная сложность и необходимость настройки.",
+    "tags": ["fundamentals", "typescript"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-011",
+    "topic": "typescript",
+    "question": "Что такое выведение типов (type inference)?",
+    "answer": "Type inference — способность TS автоматически определять тип по контексту без явной аннотации.",
+    "tags": ["type-inference"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-012",
+    "topic": "typescript",
+    "question": "Какие типы данных существуют в TypeScript?",
+    "answer": "Примитивы: string, number, boolean, bigint, symbol, null, undefined; также object, array, tuple, enum, union, intersection, literal и др.",
+    "tags": ["types", "primitives"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-013",
+    "topic": "typescript",
+    "question": "Что такое any, unknown, void, never?",
+    "answer": "any отключает проверки, unknown требует сужения, void обычно означает отсутствие возвращаемого значения, never — невозможное значение или недостижимый код.",
+    "tags": ["any", "unknown", "void", "never"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-014",
+    "topic": "typescript",
+    "question": "Что такое литеральные типы?",
+    "answer": "Литеральные типы ограничивают значение конкретным литералом, например 'ok' | 'error' или 200 | 404.",
+    "tags": ["literal-types"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-015",
+    "topic": "typescript",
+    "question": "Что такое union типы?",
+    "answer": "Union (A | B) позволяет значению быть одним из нескольких типов и часто сочетается с type guards для безопасной работы.",
+    "tags": ["union", "types"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-016",
+    "topic": "typescript",
+    "question": "Что такое кортеж (tuple) в TypeScript?",
+    "answer": "Tuple — это массив фиксированной длины и порядка типов элементов, например [string, number].",
+    "tags": ["tuple", "types"],
+    "level": "easy"
+  },
+  {
+    "id": "ts-017",
+    "topic": "typescript",
+    "question": "Что такое модификаторы в классах TS? Какие бывают?",
+    "answer": "Основные модификаторы доступа: public, private, protected; также часто используют readonly, static и abstract.",
+    "tags": ["classes", "modifiers"],
+    "level": "medium"
+  },
+  {
+    "id": "ts-018",
+    "topic": "typescript",
+    "question": "Что такое перегрузка функций в TypeScript?",
+    "answer": "Перегрузка позволяет описать несколько сигнатур одной функции, а внутри реализации обработать разные сценарии по типам аргументов.",
+    "tags": ["function-overload", "functions"],
+    "level": "medium"
+  },
+  {
+    "id": "ts-019",
+    "topic": "typescript",
+    "question": "Что такое оператор as?",
+    "answer": "as — утверждение типа (type assertion): подсказывает компилятору, как трактовать значение, но не делает runtime-проверку.",
+    "tags": ["as", "type-assertion"],
+    "level": "medium"
+  }
+]

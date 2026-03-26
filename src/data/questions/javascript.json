@@ -1,0 +1,210 @@
+[
+  {
+    "id": "js-001",
+    "topic": "javascript",
+    "question": "Мутирующие и не мутирующие методы массива?",
+    "answer": "Мутирующие меняют исходный массив (push, pop, splice, sort, reverse), не мутирующие возвращают новый (map, filter, slice, concat, toSorted, toReversed, toSpliced).",
+    "tags": ["arrays", "methods"],
+    "level": "easy"
+  },
+  {
+    "id": "js-002",
+    "topic": "javascript",
+    "question": "Что такое прототипное наследование?",
+    "answer": "Объекты в JS могут наследовать свойства и методы через цепочку прототипов: поиск свойства идет по объекту, затем по его прототипам.",
+    "tags": ["prototype", "oop"],
+    "level": "easy"
+  },
+  {
+    "id": "js-004",
+    "topic": "javascript",
+    "question": "Чем отличается использование Promise и async/await?",
+    "answer": "async/await — синтаксический сахар над Promise для более линейного чтения кода; модель исполнения и ошибки остаются промисными.",
+    "tags": ["async", "promise"],
+    "level": "easy"
+  },
+  {
+    "id": "js-006",
+    "topic": "javascript",
+    "question": "Какие есть способы привязать контекст (bind, call, apply)? В чем разница?",
+    "answer": "call/apply вызывают функцию сразу с указанным this (apply принимает массив аргументов), bind возвращает новую функцию с закрепленным this.",
+    "tags": ["this", "bind", "call", "apply"],
+    "level": "easy"
+  },
+  {
+    "id": "js-007",
+    "topic": "javascript",
+    "question": "Что такое замыкание?",
+    "answer": "Замыкание — функция, которая сохраняет доступ к переменным внешней лексической области даже после завершения внешней функции.",
+    "tags": ["closures", "scope"],
+    "level": "easy"
+  },
+  {
+    "id": "js-010",
+    "topic": "javascript",
+    "question": "Что такое рекурсия и чем она опасна?",
+    "answer": "Рекурсия — вызов функции самой себя; опасность в переполнении стека и плохой производительности без корректного базового случая.",
+    "tags": ["recursion"],
+    "level": "easy"
+  },
+  {
+    "id": "js-013",
+    "topic": "javascript",
+    "question": "Чем отличается оператор || от ??",
+    "answer": "|| берет правое значение для любых falsy, а ?? только для null/undefined.",
+    "tags": ["operators", "nullish"],
+    "level": "easy"
+  },
+  {
+    "id": "js-014",
+    "topic": "javascript",
+    "question": "Что такое Promise?",
+    "answer": "Promise — объект, представляющий результат асинхронной операции: pending, fulfilled или rejected.",
+    "tags": ["promise", "async"],
+    "level": "easy"
+  },
+  {
+    "id": "js-016",
+    "topic": "javascript",
+    "question": "Можно ли обработать ошибку через then?",
+    "answer": "Да, вторым аргументом then(onFulfilled, onRejected), но чаще используют catch для читаемости цепочки.",
+    "tags": ["promise", "error-handling"],
+    "level": "easy"
+  },
+  {
+    "id": "js-017",
+    "topic": "javascript",
+    "question": "Async / await? Что возвращает async функция?",
+    "answer": "async функция всегда возвращает Promise; await приостанавливает выполнение внутри async до завершения Promise.",
+    "tags": ["async", "await"],
+    "level": "easy"
+  },
+  {
+    "id": "js-019",
+    "topic": "javascript",
+    "question": "AbortController: зачем нужен?",
+    "answer": "Позволяет отменять асинхронные операции (например fetch) и предотвращать гонки/утечки при смене экрана или повторных запросах.",
+    "tags": ["fetch", "abortcontroller"],
+    "level": "easy"
+  },
+  {
+    "id": "js-020",
+    "topic": "javascript",
+    "question": "Как работает reduce()?",
+    "answer": "reduce проходит массив и накапливает результат в аккумуляторе, возвращая одно итоговое значение.",
+    "tags": ["arrays", "reduce"],
+    "level": "easy"
+  },
+  {
+    "id": "js-021",
+    "topic": "javascript",
+    "question": "Разница между Map и объектом?",
+    "answer": "Map хранит пары ключ-значение с ключами любого типа и предсказуемым порядком; объект удобен как структура данных с строковыми/символьными ключами.",
+    "tags": ["map", "object"],
+    "level": "easy"
+  },
+  {
+    "id": "js-003",
+    "topic": "javascript",
+    "question": "Что означают [[ ]] (внутренние слоты, например [[Prototype]])?",
+    "answer": "Это внутренние спецификационные поля объектов, недоступные напрямую из кода, но определяющие поведение движка.",
+    "tags": ["spec", "prototype"],
+    "level": "medium"
+  },
+  {
+    "id": "js-005",
+    "topic": "javascript",
+    "question": "Что такое контекст выполнения? Что такое this?",
+    "answer": "Контекст выполнения хранит окружение текущего кода, а this — ссылка на объект вызова, зависящая от способа вызова функции.",
+    "tags": ["this", "execution-context"],
+    "level": "medium"
+  },
+  {
+    "id": "js-008",
+    "topic": "javascript",
+    "question": "Виды функций и их отличия?",
+    "answer": "Function Declaration поднимается, Function Expression и Arrow создаются при выполнении; у arrow нет своего this/arguments и нельзя использовать как конструктор.",
+    "tags": ["functions", "arrow-function"],
+    "level": "medium"
+  },
+  {
+    "id": "js-009",
+    "topic": "javascript",
+    "question": "Как устроен сборщик мусора в JS? Какой алгоритм? Условие достижимости?",
+    "answer": "Основа — mark-and-sweep: объекты помечаются достижимыми от корней (global, стек), недостижимые удаляются.",
+    "tags": ["memory", "gc"],
+    "level": "medium"
+  },
+  {
+    "id": "js-011",
+    "topic": "javascript",
+    "question": "Что такое всплытие и погружение событий (event propagation)? Делегирование событий?",
+    "answer": "Событие проходит фазы capture -> target -> bubble; делегирование — обработка событий детей через одного обработчика на родителе.",
+    "tags": ["dom", "events"],
+    "level": "medium"
+  },
+  {
+    "id": "js-012",
+    "topic": "javascript",
+    "question": "Какие есть способы клонировать объект в JavaScript? Плюсы и минусы?",
+    "answer": "Поверхностно: spread/Object.assign (быстро, но вложенные ссылки общие). Глубоко: structuredClone (современный), JSON-подход теряет функции/Date/Map.",
+    "tags": ["objects", "clone"],
+    "level": "medium"
+  },
+  {
+    "id": "js-015",
+    "topic": "javascript",
+    "question": "Методы Promise (then, catch, finally, all, race, any, allSettled)?",
+    "answer": "then/catch/finally — обработка одного Promise; all — все успешно; race — первый завершившийся; any — первый успешный; allSettled — статусы всех.",
+    "tags": ["promise", "methods"],
+    "level": "medium"
+  },
+  {
+    "id": "js-018",
+    "topic": "javascript",
+    "question": "Что такое генераторы? Где встречаются?",
+    "answer": "Генераторы (function*) возвращают итератор и могут приостанавливать выполнение через yield; встречаются в итераторах, потоках данных и библиотеках эффектов.",
+    "tags": ["generators", "iterators"],
+    "level": "medium"
+  },
+  {
+    "id": "js-022",
+    "topic": "javascript",
+    "question": "WeakMap / WeakSet vs Map / Set?",
+    "answer": "WeakMap/WeakSet держат слабые ссылки на объекты-ключи и не мешают GC, но не итерируются; Map/Set итерируемы и держат сильные ссылки.",
+    "tags": ["weakmap", "weakset", "memory"],
+    "level": "medium"
+  },
+  {
+    "id": "js-024",
+    "topic": "javascript",
+    "question": "Что такое requestAnimationFrame и requestIdleCallback? Где применяются?",
+    "answer": "requestAnimationFrame — задачи перед кадром для анимаций; requestIdleCallback — фоновая работа в простое потока.",
+    "tags": ["browser-api", "performance"],
+    "level": "medium"
+  },
+  {
+    "id": "js-025",
+    "topic": "javascript",
+    "question": "Что такое IntersectionObserver и ResizeObserver? Где применяются?",
+    "answer": "IntersectionObserver отслеживает видимость элемента, ResizeObserver — изменение размеров. Используют для lazy load, аналитики и адаптивных компонентов.",
+    "tags": ["observer", "browser-api"],
+    "level": "medium"
+  },
+  {
+    "id": "js-026",
+    "topic": "javascript",
+    "question": "Что такое каррирование?",
+    "answer": "Каррирование — преобразование функции с несколькими аргументами в цепочку функций по одному аргументу.",
+    "tags": ["functions", "currying"],
+    "level": "medium"
+  },
+  {
+    "id": "js-023",
+    "topic": "javascript",
+    "question": "Как работает Event Loop? Какие очереди есть? Как создать макро- и микрозадачу?",
+    "answer": "Сначала выполняется стек, затем микрозадачи (Promise, queueMicrotask), потом макрозадачи (setTimeout, setInterval, I/O, postMessage).",
+    "tags": ["event-loop", "microtask", "macrotask"],
+    "level": "hard"
+  }
+]

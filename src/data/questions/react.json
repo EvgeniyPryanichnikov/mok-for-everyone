@@ -1,0 +1,130 @@
+[
+  {
+    "id": "react-001",
+    "topic": "react",
+    "question": "Какой классовый компонент до сих пор используется в React?",
+    "answer": "Чаще всего это Error Boundary, который сегодня обычно реализуют как class component, потому что полноценного hook-аналога для componentDidCatch пока нет.",
+    "tags": ["class-components", "error-boundary"],
+    "level": "easy"
+  },
+  {
+    "id": "react-002",
+    "topic": "react",
+    "question": "Что нужно не забыть сделать, если в компоненте есть таймер?",
+    "answer": "Очистить таймер в cleanup-функции эффекта (clearTimeout/clearInterval), чтобы избежать утечек памяти и побочных эффектов после unmount.",
+    "tags": ["useEffect", "cleanup", "timers"],
+    "level": "easy"
+  },
+  {
+    "id": "react-003",
+    "topic": "react",
+    "question": "Что такое Virtual DOM?",
+    "answer": "Virtual DOM — это легковесное представление UI в памяти; React сравнивает деревья и вносит минимальные изменения в реальный DOM.",
+    "tags": ["virtual-dom", "rendering"],
+    "level": "easy"
+  },
+  {
+    "id": "react-004",
+    "topic": "react",
+    "question": "Какие хуки чаще всего используются?",
+    "answer": "На практике чаще всего используют useState, useEffect, useMemo, useCallback, useRef и useContext.",
+    "tags": ["hooks", "fundamentals"],
+    "level": "easy"
+  },
+  {
+    "id": "react-014",
+    "topic": "react",
+    "question": "Зачем использовать атрибут name у input в React-формах?",
+    "answer": "name связывает поле с моделью данных формы, облегчает универсальные обработчики и корректную интеграцию с form-библиотеками/валидаторами.",
+    "tags": ["forms", "input", "name-attribute"],
+    "level": "easy"
+  },
+  {
+    "id": "react-005",
+    "topic": "react",
+    "question": "useEffect vs useLayoutEffect?",
+    "answer": "useEffect выполняется после отрисовки и не блокирует paint, useLayoutEffect — синхронно после DOM-мутаций до paint и нужен для измерений/коррекции layout.",
+    "tags": ["hooks", "useEffect", "useLayoutEffect"],
+    "level": "medium"
+  },
+  {
+    "id": "react-006",
+    "topic": "react",
+    "question": "Что такое HOC и React.memo?",
+    "answer": "HOC — функция, которая оборачивает компонент и добавляет поведение; React.memo мемоизирует функциональный компонент и пропускает ререндер при неизменных props.",
+    "tags": ["hoc", "memo", "optimization"],
+    "level": "medium"
+  },
+  {
+    "id": "react-007",
+    "topic": "react",
+    "question": "Почему memo() не всегда работает?",
+    "answer": "Если props каждый рендер новые по ссылке (объекты, массивы, inline-функции), memo считает их изменившимися и компонент все равно ререндерится.",
+    "tags": ["memo", "referential-equality"],
+    "level": "medium"
+  },
+  {
+    "id": "react-008",
+    "topic": "react",
+    "question": "Ограничения React Context?",
+    "answer": "Context удобен для глобальных зависимостей, но частые обновления значения могут вызывать массовые ререндеры подписчиков, поэтому иногда лучше state-менеджеры с селекторами.",
+    "tags": ["context", "performance"],
+    "level": "medium"
+  },
+  {
+    "id": "react-009",
+    "topic": "react",
+    "question": "Оптимизация React.lazy и Suspense?",
+    "answer": "Разделяйте код по маршрутам/крупным блокам, добавляйте осмысленный fallback, предзагружайте критичные чанки и избегайте чрезмерной фрагментации.",
+    "tags": ["react-lazy", "suspense", "code-splitting"],
+    "level": "medium"
+  },
+  {
+    "id": "react-010",
+    "topic": "react",
+    "question": "useMemo vs useCallback",
+    "answer": "useMemo мемоизирует вычисленное значение, useCallback — ссылку на функцию; оба помогают сохранять referential equality при необходимости.",
+    "tags": ["useMemo", "useCallback", "hooks"],
+    "level": "medium"
+  },
+  {
+    "id": "react-011",
+    "topic": "react",
+    "question": "Как избегать лишних ререндеров?",
+    "answer": "Нормализовать state, стабилизировать props/колбэки, применять memo выборочно, избегать лишних обновлений context и выносить тяжелые вычисления.",
+    "tags": ["rerender", "optimization"],
+    "level": "medium"
+  },
+  {
+    "id": "react-012",
+    "topic": "react",
+    "question": "Как оптимизировать загрузку тяжелых компонентов?",
+    "answer": "Используйте lazy loading, code splitting, отложенный рендер, skeleton/fallback и по возможности prefetch/preload для ожидаемых переходов.",
+    "tags": ["performance", "lazy-loading"],
+    "level": "medium"
+  },
+  {
+    "id": "react-013",
+    "topic": "react",
+    "question": "Библиотеки для форм RHF и RFF",
+    "answer": "RHF (React Hook Form) обычно легче и производительнее для uncontrolled-подхода, RFF (React Final Form) дает гибкую подписочную модель; выбор зависит от требований проекта.",
+    "tags": ["forms", "react-hook-form", "react-final-form"],
+    "level": "medium"
+  },
+  {
+    "id": "react-015",
+    "topic": "react",
+    "question": "Что нового в React 18 и React 19?",
+    "answer": "React 18 принес concurrent features (automatic batching, transitions, Suspense improvements), React 19 усиливает server/client интеграцию, формы и экосистемные API.",
+    "tags": ["react18", "react19", "release-notes"],
+    "level": "hard"
+  },
+  {
+    "id": "react-016",
+    "topic": "react",
+    "question": "Что такое Fiber в React?",
+    "answer": "Fiber — внутренний движок reconciliation, который разбивает работу рендера на приоритетные задачи и позволяет React прерывать/возобновлять обновления.",
+    "tags": ["fiber", "reconciliation", "internals"],
+    "level": "hard"
+  }
+]

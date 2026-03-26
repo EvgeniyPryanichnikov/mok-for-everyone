@@ -1,0 +1,202 @@
+[
+  {
+    "id": "bn-001",
+    "topic": "browser_networks",
+    "question": "Что происходит при вводе URL в адресную строку?",
+    "answer": "Браузер парсит URL, проверяет кэш и DNS, устанавливает TCP/TLS соединение, отправляет HTTP-запрос, получает ответ и начинает рендер страницы.",
+    "tags": ["url", "dns", "http"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-002",
+    "topic": "browser_networks",
+    "question": "Как работает Garbage Collection?",
+    "answer": "Сборщик мусора освобождает память объектов, которые больше недостижимы из корней (global, стек, замыкания), обычно по схеме mark-and-sweep.",
+    "tags": ["gc", "memory"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-003",
+    "topic": "browser_networks",
+    "question": "Из чего состоит HTTP-запрос?",
+    "answer": "Запрос состоит из стартовой строки (метод, путь, версия), заголовков и тела (если применимо).",
+    "tags": ["http", "request"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-004",
+    "topic": "browser_networks",
+    "question": "Какие флаги есть у cookie? Что такое HttpOnly?",
+    "answer": "Частые флаги: Secure, HttpOnly, SameSite, Max-Age/Expires, Domain, Path. HttpOnly запрещает доступ к cookie из JavaScript в браузере.",
+    "tags": ["cookie", "security"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-005",
+    "topic": "browser_networks",
+    "question": "Какие есть варианты хранения данных на фронтенде?",
+    "answer": "Чаще всего используют localStorage, sessionStorage, cookies, IndexedDB и in-memory состояние приложения.",
+    "tags": ["storage", "frontend"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-006",
+    "topic": "browser_networks",
+    "question": "Что такое Web API?",
+    "answer": "Web API — набор браузерных API (DOM, fetch, localStorage, timers и др.), которые предоставляет среда выполнения, а не сам JavaScript.",
+    "tags": ["web-api", "browser"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-008",
+    "topic": "browser_networks",
+    "question": "Какие инструменты для анализа производительности используешь?",
+    "answer": "Обычно Lighthouse, вкладки Performance и Network в DevTools, а также Web Vitals и профилирование в реальных сценариях.",
+    "tags": ["lighthouse", "devtools", "performance"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-010",
+    "topic": "browser_networks",
+    "question": "Что такое Shadow DOM?",
+    "answer": "Shadow DOM инкапсулирует разметку и стили компонента, изолируя их от внешнего документа.",
+    "tags": ["shadow-dom", "web-components"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-011",
+    "topic": "browser_networks",
+    "question": "Как происходит рендер после того как мы получили HTML?",
+    "answer": "Браузер строит DOM и CSSOM, формирует render tree, выполняет layout, затем paint и compositing.",
+    "tags": ["rendering", "critical-rendering-path"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-012",
+    "topic": "browser_networks",
+    "question": "Объясните разницу между HTTP и HTTPS?",
+    "answer": "HTTPS — это HTTP поверх TLS: данные шифруются, повышается целостность и подтверждается подлинность сервера.",
+    "tags": ["http", "https", "tls"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-016",
+    "topic": "browser_networks",
+    "question": "Что такое SPA и PWA?",
+    "answer": "SPA — одностраничное приложение с клиентским роутингом, PWA — веб-приложение с возможностями, близкими к нативным (offline, install, push).",
+    "tags": ["spa", "pwa"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-017",
+    "topic": "browser_networks",
+    "question": "Для чего нужны async и defer у script и чем они отличаются?",
+    "answer": "Оба загружают скрипт без полной блокировки HTML-парсинга: async выполняется сразу после загрузки (порядок не гарантирован), defer — после парсинга документа и в порядке подключения.",
+    "tags": ["html", "scripts", "async", "defer"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-019",
+    "topic": "browser_networks",
+    "question": "Какие HTTP-методы используются чаще всего и что они означают?",
+    "answer": "Часто используют GET, POST, PUT, PATCH, DELETE, а также HEAD и OPTIONS; они описывают намерение операции над ресурсом.",
+    "tags": ["http", "methods", "api"],
+    "level": "easy"
+  },
+  {
+    "id": "bn-007",
+    "topic": "browser_networks",
+    "question": "Как оптимизировать приложение (FCP, LCP, CLS и т.д.)?",
+    "answer": "Нужно снижать блокирующие ресурсы, оптимизировать изображения и шрифты, уменьшать JS, стабилизировать layout и измерять Core Web Vitals на реальных данных.",
+    "tags": ["performance", "cwv"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-009",
+    "topic": "browser_networks",
+    "question": "Что такое и для чего нужны WebRTC и WebSocket?",
+    "answer": "WebSocket дает постоянный двусторонний канал клиент-сервер, WebRTC — peer-to-peer обмен медиа/данными в реальном времени.",
+    "tags": ["webrtc", "websocket", "realtime"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-013",
+    "topic": "browser_networks",
+    "question": "Что такое CORS? Preflight-запрос? Метод OPTIONS?",
+    "answer": "CORS регулирует междоменные запросы. Для небезопасных запросов браузер делает preflight OPTIONS и проверяет разрешающие заголовки сервера.",
+    "tags": ["cors", "options", "http"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-014",
+    "topic": "browser_networks",
+    "question": "Стадии рендера: layout, paint, compositing?",
+    "answer": "Layout считает геометрию элементов, paint рисует пиксели слоев, compositing собирает слои в финальный кадр на экране.",
+    "tags": ["layout", "paint", "compositing"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-015",
+    "topic": "browser_networks",
+    "question": "Расскажи про Web Worker и Service Worker?",
+    "answer": "Web Worker выполняет вычисления в отдельном потоке, Service Worker перехватывает сеть и помогает с кэшированием, offline и push.",
+    "tags": ["web-worker", "service-worker"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-018",
+    "topic": "browser_networks",
+    "question": "Что такое протокол HTTP? Какие версии есть и чем отличаются?",
+    "answer": "HTTP — протокол обмена данными между клиентом и сервером. Основные версии: HTTP/1.1, HTTP/2 (мультиплексирование), HTTP/3 (QUIC/UDP и меньшие задержки).",
+    "tags": ["http", "http2", "http3"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-020",
+    "topic": "browser_networks",
+    "question": "Что такое идемпотентный запрос?",
+    "answer": "Идемпотентный запрос дает одинаковый эффект при повторении (например GET/PUT/DELETE), в отличие от типичного POST.",
+    "tags": ["http", "idempotency", "api"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-021",
+    "topic": "browser_networks",
+    "question": "Принципы построения RESTful API?",
+    "answer": "Ресурсный подход, понятные URI, корректные HTTP-методы/статусы, stateless-взаимодействие, кешируемость и предсказуемые контракты.",
+    "tags": ["rest", "api", "http"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-022",
+    "topic": "browser_networks",
+    "question": "В чем отличие REST API и GraphQL?",
+    "answer": "REST обычно использует несколько endpoint-ов с фиксированными ответами, GraphQL — единый endpoint и запрос только нужных полей.",
+    "tags": ["rest", "graphql", "api"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-023",
+    "topic": "browser_networks",
+    "question": "Чем WebSocket отличается от SSE и long-polling?",
+    "answer": "WebSocket — двусторонний постоянный канал, SSE — односторонний сервер->клиент поток событий, long-polling — серия долгих HTTP-запросов.",
+    "tags": ["websocket", "sse", "long-polling", "realtime"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-024",
+    "topic": "browser_networks",
+    "question": "Какие есть виды рендеринга (SSR, SSG, CSR, ISR)?",
+    "answer": "CSR рендерит на клиенте, SSR — на сервере на каждый запрос, SSG генерирует страницы на билде, ISR обновляет статические страницы инкрементально.",
+    "tags": ["ssr", "ssg", "csr", "isr", "rendering"],
+    "level": "medium"
+  },
+  {
+    "id": "bn-025",
+    "topic": "browser_networks",
+    "question": "Что такое гидратация и регидратация?",
+    "answer": "Гидратация связывает серверный HTML с клиентским приложением; регидратация — восстановление клиентского состояния/данных после инициализации.",
+    "tags": ["hydration", "ssr", "rendering"],
+    "level": "medium"
+  }
+]

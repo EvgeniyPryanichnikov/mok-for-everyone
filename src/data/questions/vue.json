@@ -1,0 +1,386 @@
+[
+  {
+    "id": "vue-037",
+    "topic": "vue",
+    "question": "Что такое Vue.js и какие у него ключевые особенности?",
+    "answer": "Vue.js — прогрессивный фреймворк для UI с реактивностью данных, декларативным рендерингом и компонентной архитектурой.",
+    "tags": ["core", "fundamentals"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-038",
+    "topic": "vue",
+    "question": "Что такое реактивность в Vue.js (базово)?",
+    "answer": "Реактивность означает автоматическое отслеживание изменений состояния и обновление интерфейса только там, где это нужно.",
+    "tags": ["reactivity", "fundamentals"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-001",
+    "topic": "vue",
+    "question": "Чем отличаются Vue 2 и Vue 3 на практике (Composition API, новая реактивность, поддержка)?",
+    "answer": "Vue 3 добавил Composition API, Proxy-реактивность, лучшую типизацию и долгосрочную поддержку; Vue 2 основан на Options API и Object.defineProperty.",
+    "tags": ["core", "vue2-vs-vue3"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-002",
+    "topic": "vue",
+    "question": "Чем отличаются v-if и v-show и когда что выбирать?",
+    "answer": "v-if создает/удаляет узел, v-show только меняет display; v-if лучше для редкого рендера, v-show для частого переключения.",
+    "tags": ["directives", "rendering"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-003",
+    "topic": "vue",
+    "question": "Хуки жизненного цикла во Vue 2 и Vue 3: какие есть и чем отличаются?",
+    "answer": "Семантика похожа, но во Vue 3 есть вариант через Composition API: onMounted, onUpdated, onUnmounted и др.",
+    "tags": ["lifecycle", "core"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-004",
+    "topic": "vue",
+    "question": "Зачем нужен key в v-for и какие ошибки он предотвращает?",
+    "answer": "key помогает корректно сопоставлять элементы при обновлении списка и предотвращает артефакты переиспользования DOM.",
+    "tags": ["list-rendering", "key"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-005",
+    "topic": "vue",
+    "question": "Почему нельзя мутировать props и как правильно менять данные снизу вверх?",
+    "answer": "Props принадлежат родителю; изменения делают через emit-события или v-model, чтобы сохранить однонаправленный поток данных.",
+    "tags": ["props", "emit"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-010",
+    "topic": "vue",
+    "question": "Что такое ref и reactive и когда выбирать каждый?",
+    "answer": "ref удобен для примитивов и одиночных значений, reactive — для объектов/структур; оба реактивны, но с разной эргономикой доступа.",
+    "tags": ["reactivity", "ref", "reactive"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-011",
+    "topic": "vue",
+    "question": "Чем computed отличается от watch и в каких задачах что использовать?",
+    "answer": "computed для производных значений, watch для побочных эффектов при изменении данных (запросы, логирование, синхронизация).",
+    "tags": ["computed", "watch"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-015",
+    "topic": "vue",
+    "question": "v-model: что делает директива и как это выглядит в компоненте?",
+    "answer": "v-model связывает значение и событие обновления; в компоненте это обычно modelValue и emit update:modelValue.",
+    "tags": ["v-model", "components"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-016",
+    "topic": "vue",
+    "question": "Как реализовать двустороннюю связь в кастомном компоненте: modelValue + update:modelValue?",
+    "answer": "Компонент принимает prop modelValue и эмитит update:modelValue с новым значением при изменении.",
+    "tags": ["v-model", "emit"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-018",
+    "topic": "vue",
+    "question": "Что такое emit и как типизировать события во Vue 3 (defineEmits)?",
+    "answer": "emit отправляет события родителю; в script setup defineEmits типизирует имена и payload событий.",
+    "tags": ["emit", "typescript"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-022",
+    "topic": "vue",
+    "question": "Что такое store и когда он нужен, а когда достаточно локального состояния?",
+    "answer": "Store нужен для разделяемого состояния между экранами/модулями; локального state достаточно для изолированной логики компонента.",
+    "tags": ["state-management"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-023",
+    "topic": "vue",
+    "question": "Базовые сущности Pinia: state, getters, actions - за что отвечает каждая?",
+    "answer": "state хранит данные, getters вычисляют производные значения, actions инкапсулируют бизнес-логику и асинхронные операции.",
+    "tags": ["pinia"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-026",
+    "topic": "vue",
+    "question": "Общая разница Pinia и Vuex: почему в новых проектах чаще выбирают Pinia?",
+    "answer": "Pinia проще API, лучше TypeScript DX и меньше шаблонного кода; Vuex чаще встречается в legacy-проектах.",
+    "tags": ["pinia", "vuex"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-028",
+    "topic": "vue",
+    "question": "CSR vs SSR: в чем разница по рендеру и пользовательскому эффекту?",
+    "answer": "CSR рендерит в браузере после загрузки JS, SSR отдает готовый HTML с сервера и обычно ускоряет первый полезный показ контента.",
+    "tags": ["nuxt", "ssr", "csr"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-030",
+    "topic": "vue",
+    "question": "Что такое SSG (prerender) и когда его выбирать?",
+    "answer": "SSG генерирует HTML заранее на этапе сборки; подходит для статичного или редко меняющегося контента.",
+    "tags": ["ssg", "nuxt"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-040",
+    "topic": "vue",
+    "question": "Что такое Virtual DOM во Vue 3?",
+    "answer": "Virtual DOM — это представление UI в виде JS-структур; Vue сравнивает изменения и минимально обновляет реальный DOM.",
+    "tags": ["virtual-dom", "rendering"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-041",
+    "topic": "vue",
+    "question": "Какие основные способы передачи данных между компонентами во Vue?",
+    "answer": "Основные варианты: props/emit, provide/inject, slots, store (Pinia/Vuex), а также template refs для частных случаев.",
+    "tags": ["components", "data-flow"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-045",
+    "topic": "vue",
+    "question": "Что такое nextTick() и когда он нужен?",
+    "answer": "nextTick откладывает код до завершения батча DOM-обновлений Vue, когда нужно работать уже с актуальным DOM.",
+    "tags": ["nextTick", "dom"],
+    "level": "easy"
+  },
+  {
+    "id": "vue-006",
+    "topic": "vue",
+    "question": "Слоты: default, named, scoped - как передавать разметку и данные через слоты?",
+    "answer": "default slot — базовый контент, named — несколько областей, scoped slot — передача данных из дочернего в слот родителя.",
+    "tags": ["slots"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-007",
+    "topic": "vue",
+    "question": "Встроенные компоненты Vue и основные кейсы: Teleport, KeepAlive, Transition?",
+    "answer": "Teleport рендерит узел вне дерева, KeepAlive кэширует компонент, Transition управляет анимациями входа/выхода.",
+    "tags": ["built-in-components"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-008",
+    "topic": "vue",
+    "question": "Асинхронные компоненты: зачем нужны и как подключаются?",
+    "answer": "Нужны для lazy loading; подключаются через defineAsyncComponent и уменьшают начальный размер бандла.",
+    "tags": ["performance", "async-components"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-009",
+    "topic": "vue",
+    "question": "Как работает реактивность во Vue 3 на уровне отслеживания и обновления UI?",
+    "answer": "Proxy перехватывает чтения/записи, зависимости трекаются во время рендера/эффектов, при изменении вызывается обновление связанных эффектов.",
+    "tags": ["reactivity"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-012",
+    "topic": "vue",
+    "question": "Когда использовать watch, а когда watchEffect?",
+    "answer": "watch дает явный контроль источника и прошлых значений, watchEffect автоматически собирает зависимости и удобен для быстрых реактивных эффектов.",
+    "tags": ["watch", "watchEffect"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-013",
+    "topic": "vue",
+    "question": "Что такое toRefs и зачем он нужен при деструктуризации reactive?",
+    "answer": "toRefs превращает поля reactive-объекта в ref, чтобы не потерять реактивность при деструктуризации.",
+    "tags": ["toRefs", "reactive"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-017",
+    "topic": "vue",
+    "question": "Чем отличается v-model от явной схемы prop + emit и когда лучше явно?",
+    "answer": "v-model — синтаксический сахар; явная схема лучше, когда важна прозрачность API и нестандартная семантика событий.",
+    "tags": ["v-model", "api-design"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-019",
+    "topic": "vue",
+    "question": "provide / inject: когда уместно использовать?",
+    "answer": "Когда нужно передавать зависимости глубоко по дереву без props drilling, например сервисы, конфиг, контекст формы.",
+    "tags": ["provide-inject"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-020",
+    "topic": "vue",
+    "question": "Как сделать глобальный компонент и когда это оправдано?",
+    "answer": "Регистрируют через app.component; оправдано для часто используемых базовых UI-элементов, но не для узкоспециализированных компонентов.",
+    "tags": ["components", "global-registration"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-021",
+    "topic": "vue",
+    "question": "Как получить доступ к дочернему компоненту через template ref и какие риски?",
+    "answer": "Через ref на экземпляр дочернего компонента; риск — сильная связность и нарушение декларативного подхода.",
+    "tags": ["refs", "components"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-024",
+    "topic": "vue",
+    "question": "Можно ли мутировать state напрямую в Pinia и какие риски?",
+    "answer": "Технически можно, но лучше централизовать изменения в actions для предсказуемости, тестируемости и понятной истории изменений.",
+    "tags": ["pinia", "state"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-025",
+    "topic": "vue",
+    "question": "Vuex: чем отличаются mutations и actions?",
+    "answer": "mutations синхронно меняют state, actions могут быть асинхронными и коммитят mutations.",
+    "tags": ["vuex"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-029",
+    "topic": "vue",
+    "question": "Почему чистый CSR чаще хуже для SEO?",
+    "answer": "Поисковик может получить минимальный HTML без контента и отложенную индексацию, что ухудшает качество и скорость индексации.",
+    "tags": ["seo", "csr"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-032",
+    "topic": "vue",
+    "question": "Где выполняется код в Nuxt: server и client, и почему нельзя window/localStorage на сервере?",
+    "answer": "Часть кода выполняется на сервере без браузерных API; window и localStorage доступны только на клиенте.",
+    "tags": ["nuxt", "runtime"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-034",
+    "topic": "vue",
+    "question": "Middleware в Nuxt: что это и какие виды бывают?",
+    "answer": "Middleware — промежуточная логика перед маршрутом (global, named, inline), часто для auth, редиректов и проверок доступа.",
+    "tags": ["nuxt", "middleware"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-035",
+    "topic": "vue",
+    "question": "Что такое Nitro и server routes в Nuxt?",
+    "answer": "Nitro — серверный движок Nuxt, а server routes позволяют делать backend-эндпоинты внутри проекта.",
+    "tags": ["nuxt", "nitro"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-036",
+    "topic": "vue",
+    "question": "Авторизация в SSR: почему localStorage не подходит как единственный источник и зачем используют cookie?",
+    "answer": "На сервере localStorage недоступен; cookie отправляются с запросом и подходят для SSR-проверок сессии.",
+    "tags": ["ssr", "auth", "cookie"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-039",
+    "topic": "vue",
+    "question": "Какие есть облегченные альтернативы ref/reactive и когда они полезны?",
+    "answer": "Часто используют shallowRef/shallowReactive для неглубокой реактивности и markRaw для исключения объектов из реактивного трекинга.",
+    "tags": ["reactivity", "shallowRef", "markRaw"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-042",
+    "topic": "vue",
+    "question": "Options API vs Composition API: где хранится состояние и в чем преимущества Composition API?",
+    "answer": "В Options API состояние обычно в data/computed/methods, в Composition API — в setup/composables; Composition API лучше группирует логику, удобнее для переиспользования и TypeScript.",
+    "tags": ["options-api", "composition-api", "typescript"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-043",
+    "topic": "vue",
+    "question": "Когда действительно нужно глобальное состояние?",
+    "answer": "Когда данные разделяются между удаленными компонентами/экранами и требуют единого источника истины, а props/emit уже неудобны.",
+    "tags": ["state-management", "pinia"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-044",
+    "topic": "vue",
+    "question": "Что делает директива v-memo?",
+    "answer": "v-memo мемоизирует поддерево шаблона и пропускает его повторный рендер, если заданные зависимости не изменились.",
+    "tags": ["v-memo", "performance"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-046",
+    "topic": "vue",
+    "question": "Какие основные методы оптимизации Vue-проекта?",
+    "answer": "Декомпозиция компонентов, lazy loading, кэширование через computed, корректные key, контроль реактивности и уменьшение лишних перерендеров.",
+    "tags": ["performance", "optimization"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-048",
+    "topic": "vue",
+    "question": "Как работает асинхронная подгрузка маршрутов во Vue Router?",
+    "answer": "Компонент маршрута подключают динамическим import в route-конфиге, чтобы код страницы загружался только при переходе на нее.",
+    "tags": ["router", "lazy-loading", "performance"],
+    "level": "medium"
+  },
+  {
+    "id": "vue-014",
+    "topic": "vue",
+    "question": "Типовые причины лишних обновлений и как их избегать?",
+    "answer": "Причины: крупные компоненты, широкие зависимости, неверный key; решения: декомпозиция, точные зависимости, стабильные ключи.",
+    "tags": ["performance", "rendering"],
+    "level": "hard"
+  },
+  {
+    "id": "vue-027",
+    "topic": "vue",
+    "question": "Как хранить auth-состояние: access/refresh, профиль и синхронизацию с cookie/хранилищем?",
+    "answer": "Профиль обычно в store, refresh часто в HttpOnly cookie, access в памяти/коротком хранилище с ротацией и защитой от XSS.",
+    "tags": ["auth", "security"],
+    "level": "hard"
+  },
+  {
+    "id": "vue-031",
+    "topic": "vue",
+    "question": "Что такое гидратация и почему возникают hydration mismatch?",
+    "answer": "Гидратация связывает серверный HTML с клиентским приложением; mismatch возникает из-за различий данных, времени, случайных значений и условий рендера.",
+    "tags": ["ssr", "hydration"],
+    "level": "hard"
+  },
+  {
+    "id": "vue-033",
+    "topic": "vue",
+    "question": "Data fetching в Nuxt: useFetch vs useAsyncData vs $fetch?",
+    "answer": "useFetch/useAsyncData интегрированы с SSR и кэшом состояния, $fetch — низкоуровневый HTTP-запрос без автоматической SSR-обвязки.",
+    "tags": ["nuxt", "data-fetching"],
+    "level": "hard"
+  },
+  {
+    "id": "vue-047",
+    "topic": "vue",
+    "question": "Как оптимизировать рендеринг через v-memo, shallowRef и markRaw?",
+    "answer": "v-memo уменьшает лишние рендеры, shallowRef/shallowReactive ограничивают глубину трекинга, markRaw исключает тяжелые объекты из реактивности.",
+    "tags": ["performance", "v-memo", "shallowRef", "markRaw"],
+    "level": "hard"
+  }
+]

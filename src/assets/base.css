@@ -1,0 +1,43 @@
+:root {
+  --color-background: #eaf7f0;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eef8f2;
+  --color-border: #d8ece1;
+  --color-heading: #2c3e50;
+  --color-text: #35495e;
+  --color-text-soft: #5c7286;
+  --color-vue-green: #42b883;
+  --color-vue-green-dark: #2f7f5c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family:
+    'Manrope',
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
