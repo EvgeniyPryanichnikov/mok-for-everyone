@@ -19,6 +19,8 @@ const availableTopics = computed(() => [...TOPICS, 'CONSTRUCTOR'] as TopicFilter
 const canStartConstructorMock = computed(() => constructorTopics.value.length > 0)
 const topicLabels: Record<Topic, string> = {
   vue: 'Vue',
+  nuxt: 'Nuxt',
+  legend: 'Легенда',
   javascript: 'JavaScript',
   typescript: 'TypeScript',
   react: 'React',

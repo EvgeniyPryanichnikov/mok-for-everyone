@@ -54,7 +54,7 @@ watch(
         {{ isAnswerVisible ? 'Скрыть ответ' : 'Показать ответ' }}
       </button>
       <div v-if="isAnswerVisible" class="answer-wrap">
-        <div class="ai-note">
+        <div v-if="currentQuestion.topic !== 'legend'" class="ai-note">
           <span class="ai-note-icon">!</span>
           <span class="ai-note-text">Ответ сгенерирован ИИ</span>
         </div>
@@ -69,7 +69,12 @@ watch(
           :class="isCurrentRepeat ? 'btn-danger' : 'btn-repeat-soft'"
           @click="emit('toggleRepeat')"
         >
-          {{ isCurrentRepeat ? 'Убрать из повторения' : 'Необходимо повторить' }}
+          <span class="repeat-label-desktop">
+            {{ isCurrentRepeat ? 'Убрать из повторения' : 'Необходимо повторить' }}
+          </span>
+          <span class="repeat-label-mobile">
+            {{ isCurrentRepeat ? 'Убрать' : 'В повтор' }}
+          </span>
         </button>
       </div>
     </div>

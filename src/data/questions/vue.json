@@ -120,22 +120,6 @@
     "level": "easy"
   },
   {
-    "id": "vue-028",
-    "topic": "vue",
-    "question": "CSR vs SSR: в чем разница по рендеру и пользовательскому эффекту?",
-    "answer": "CSR рендерит в браузере после загрузки JS, SSR отдает готовый HTML с сервера и обычно ускоряет первый полезный показ контента.",
-    "tags": ["nuxt", "ssr", "csr"],
-    "level": "easy"
-  },
-  {
-    "id": "vue-030",
-    "topic": "vue",
-    "question": "Что такое SSG (prerender) и когда его выбирать?",
-    "answer": "SSG генерирует HTML заранее на этапе сборки; подходит для статичного или редко меняющегося контента.",
-    "tags": ["ssg", "nuxt"],
-    "level": "easy"
-  },
-  {
     "id": "vue-040",
     "topic": "vue",
     "question": "Что такое Virtual DOM во Vue 3?",
@@ -264,38 +248,6 @@
     "level": "medium"
   },
   {
-    "id": "vue-032",
-    "topic": "vue",
-    "question": "Где выполняется код в Nuxt: server и client, и почему нельзя window/localStorage на сервере?",
-    "answer": "Часть кода выполняется на сервере без браузерных API; window и localStorage доступны только на клиенте.",
-    "tags": ["nuxt", "runtime"],
-    "level": "medium"
-  },
-  {
-    "id": "vue-034",
-    "topic": "vue",
-    "question": "Middleware в Nuxt: что это и какие виды бывают?",
-    "answer": "Middleware — промежуточная логика перед маршрутом (global, named, inline), часто для auth, редиректов и проверок доступа.",
-    "tags": ["nuxt", "middleware"],
-    "level": "medium"
-  },
-  {
-    "id": "vue-035",
-    "topic": "vue",
-    "question": "Что такое Nitro и server routes в Nuxt?",
-    "answer": "Nitro — серверный движок Nuxt, а server routes позволяют делать backend-эндпоинты внутри проекта.",
-    "tags": ["nuxt", "nitro"],
-    "level": "medium"
-  },
-  {
-    "id": "vue-036",
-    "topic": "vue",
-    "question": "Авторизация в SSR: почему localStorage не подходит как единственный источник и зачем используют cookie?",
-    "answer": "На сервере localStorage недоступен; cookie отправляются с запросом и подходят для SSR-проверок сессии.",
-    "tags": ["ssr", "auth", "cookie"],
-    "level": "medium"
-  },
-  {
     "id": "vue-039",
     "topic": "vue",
     "question": "Какие есть облегченные альтернативы ref/reactive и когда они полезны?",
@@ -365,14 +317,6 @@
     "question": "Что такое гидратация и почему возникают hydration mismatch?",
     "answer": "Гидратация связывает серверный HTML с клиентским приложением; mismatch возникает из-за различий данных, времени, случайных значений и условий рендера.",
     "tags": ["ssr", "hydration"],
-    "level": "hard"
-  },
-  {
-    "id": "vue-033",
-    "topic": "vue",
-    "question": "Data fetching в Nuxt: useFetch vs useAsyncData vs $fetch?",
-    "answer": "useFetch/useAsyncData интегрированы с SSR и кэшом состояния, $fetch — низкоуровневый HTTP-запрос без автоматической SSR-обвязки.",
-    "tags": ["nuxt", "data-fetching"],
     "level": "hard"
   },
   {

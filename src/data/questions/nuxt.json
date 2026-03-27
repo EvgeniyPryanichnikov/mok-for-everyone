@@ -1,0 +1,210 @@
+[
+  {
+    "id": "nuxt-001",
+    "topic": "nuxt",
+    "question": "Что такое Nuxt и когда его выбирают вместо чистого Vue + Vite?",
+    "answer": "Nuxt — meta-framework над Vue для SSR/SSG/ISR и full-stack сценариев. Его выбирают, когда нужны SEO, маршрутизация и серверная часть из коробки.",
+    "tags": ["core", "architecture"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-002",
+    "topic": "nuxt",
+    "question": "В чем разница между SSR, CSR и SSG в Nuxt?",
+    "answer": "SSR рендерит HTML на сервере на каждый запрос, CSR рендерит UI в браузере, SSG генерирует HTML заранее при билде.",
+    "tags": ["rendering", "ssr", "csr", "ssg"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-003",
+    "topic": "nuxt",
+    "question": "Как устроена файловая маршрутизация в Nuxt?",
+    "answer": "Маршруты создаются автоматически из структуры `pages/`: имена файлов и папок определяют пути, динамические сегменты задаются через квадратные скобки.",
+    "tags": ["routing", "pages"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-004",
+    "topic": "nuxt",
+    "question": "Для чего нужны папки `pages`, `layouts`, `components` и `composables`?",
+    "answer": "`pages` задает роуты, `layouts` описывает общие обертки страниц, `components` хранит UI-компоненты, `composables` — переиспользуемую реактивную логику.",
+    "tags": ["project-structure"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-005",
+    "topic": "nuxt",
+    "question": "Что такое `useFetch` и когда его использовать?",
+    "answer": "`useFetch` выполняет запросы с поддержкой SSR и автоматическим хранением состояния между сервером и клиентом; подходит для типовых API-запросов в странице.",
+    "tags": ["data-fetching", "ssr"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-006",
+    "topic": "nuxt",
+    "question": "Чем `useAsyncData` отличается от `useFetch`?",
+    "answer": "`useAsyncData` универсальнее и позволяет завернуть любую асинхронную функцию с ключом кэширования, а `useFetch` — удобный хелпер для HTTP-запросов.",
+    "tags": ["data-fetching", "caching"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-017",
+    "topic": "nuxt",
+    "question": "Когда в Nuxt стоит выбирать SSG (prerender)?",
+    "answer": "SSG выбирают для маркетинговых и контентных страниц, где важны скорость и SEO, а данные обновляются не каждую секунду.",
+    "tags": ["ssg", "seo"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-018",
+    "topic": "nuxt",
+    "question": "Что делает `useHead` в Nuxt и зачем он важен?",
+    "answer": "`useHead` управляет title/meta/link/script на уровне страницы, что важно для SEO, превью в соцсетях и корректной индексации.",
+    "tags": ["seo", "meta", "head"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-019",
+    "topic": "nuxt",
+    "question": "Data fetching в Nuxt: `useFetch` vs `useAsyncData` vs `$fetch`?",
+    "answer": "`useFetch` и `useAsyncData` связаны с SSR-гидратацией и состоянием страницы, `$fetch` — низкоуровневый запрос без автоматической SSR-обвязки.",
+    "tags": ["data-fetching", "ssr"],
+    "level": "easy"
+  },
+  {
+    "id": "nuxt-007",
+    "topic": "nuxt",
+    "question": "Что такое `runtimeConfig` и где хранить публичные/приватные переменные?",
+    "answer": "В `runtimeConfig` задают конфиг рантайма: приватные ключи доступны только на сервере, публичные размещают в `runtimeConfig.public` для клиента.",
+    "tags": ["config", "security"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-008",
+    "topic": "nuxt",
+    "question": "Зачем в Nuxt нужны плагины (`plugins`) и как они подключаются?",
+    "answer": "Плагины инициализируют внешние библиотеки и инжектят зависимости в приложение; Nuxt автоматически подхватывает файлы из `plugins/`.",
+    "tags": ["plugins", "dependency-injection"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-009",
+    "topic": "nuxt",
+    "question": "Что такое middleware в Nuxt и какие задачи он решает?",
+    "answer": "Middleware выполняется перед переходом на маршрут и подходит для auth-проверок, редиректов, ограничения доступа и предзагрузки контекста.",
+    "tags": ["middleware", "routing"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-010",
+    "topic": "nuxt",
+    "question": "Как в Nuxt правильно разделять клиентский и серверный код?",
+    "answer": "Нужно учитывать контекст выполнения: браузерные API использовать только на клиенте, а серверную логику — в `server/` или с проверками `process.client/process.server`.",
+    "tags": ["runtime", "ssr"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-011",
+    "topic": "nuxt",
+    "question": "Что такое Nitro в Nuxt?",
+    "answer": "Nitro — серверный движок Nuxt, который обрабатывает SSR и API-эндпоинты, и может деплоиться на Node, serverless и edge-платформы.",
+    "tags": ["nitro", "server"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-012",
+    "topic": "nuxt",
+    "question": "Как работают серверные API-роуты в Nuxt (`server/api`)?",
+    "answer": "Файлы в `server/api` автоматически становятся backend-эндпоинтами; внутри используют хендлеры Nitro и получают доступ к запросу/ответу через event.",
+    "tags": ["server-routes", "api"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-020",
+    "topic": "nuxt",
+    "question": "Как в Nuxt организовать глобальную обработку ошибок и страницу ошибок?",
+    "answer": "Используют `error.vue`, `showError`/`createError` и обработку ошибок в middleware/server handlers, чтобы централизованно отдавать корректные статусы и UI.",
+    "tags": ["errors", "routing"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-021",
+    "topic": "nuxt",
+    "question": "Для чего нужны route rules в Nuxt?",
+    "answer": "Route rules позволяют настраивать поведение маршрутов (кэш, prerender, редиректы и др.) точечно, без дублирования логики по проекту.",
+    "tags": ["route-rules", "performance"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-022",
+    "topic": "nuxt",
+    "question": "Как работает `defineNuxtRouteMiddleware` и где лучше хранить auth-проверки?",
+    "answer": "Через `defineNuxtRouteMiddleware` описывают named/global middleware; auth-проверки обычно держат в middleware, а критичную валидацию дублируют на сервере.",
+    "tags": ["middleware", "auth"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-023",
+    "topic": "nuxt",
+    "question": "Зачем нужен `callOnce` в Nuxt и когда он полезен?",
+    "answer": "`callOnce` предотвращает повторное выполнение инициализации (например, загрузки справочников), когда один и тот же код может запускаться несколько раз.",
+    "tags": ["performance", "data-fetching"],
+    "level": "medium"
+  },
+  {
+    "id": "nuxt-013",
+    "topic": "nuxt",
+    "question": "Что такое гидратация и почему возникает hydration mismatch в Nuxt?",
+    "answer": "Гидратация связывает SSR-HTML с клиентским Vue-приложением; mismatch появляется, когда сервер и клиент рендерят разный результат.",
+    "tags": ["hydration", "ssr"],
+    "level": "hard"
+  },
+  {
+    "id": "nuxt-014",
+    "topic": "nuxt",
+    "question": "Как в Nuxt обычно реализуют авторизацию в SSR-сценарии?",
+    "answer": "Обычно токены/сессию держат в cookie (часто HttpOnly), проверяют доступ в middleware или server routes, а клиент использует состояние профиля из store.",
+    "tags": ["auth", "ssr", "cookies"],
+    "level": "hard"
+  },
+  {
+    "id": "nuxt-015",
+    "topic": "nuxt",
+    "question": "Какие стратегии кеширования и оптимизации данных применяют в Nuxt?",
+    "answer": "Используют ключи в `useAsyncData`, кэш на стороне CDN/edge, дедупликацию запросов, lazy-fetch и разделение тяжелых блоков на отложенную загрузку.",
+    "tags": ["performance", "caching"],
+    "level": "hard"
+  },
+  {
+    "id": "nuxt-016",
+    "topic": "nuxt",
+    "question": "Что такое ISR/гибридный рендеринг в Nuxt и когда он полезен?",
+    "answer": "Гибридный рендеринг позволяет сочетать статическую генерацию и периодическое обновление страниц, что полезно для контента, который меняется не каждую секунду.",
+    "tags": ["isr", "hybrid-rendering"],
+    "level": "hard"
+  },
+  {
+    "id": "nuxt-024",
+    "topic": "nuxt",
+    "question": "Какие причины чаще всего приводят к медленному TTFB в Nuxt SSR-приложениях?",
+    "answer": "Часто виноваты тяжелые серверные запросы, отсутствие кэширования, последовательные async-операции и лишняя серверная логика на каждый запрос.",
+    "tags": ["performance", "ssr"],
+    "level": "hard"
+  },
+  {
+    "id": "nuxt-025",
+    "topic": "nuxt",
+    "question": "Как безопасно проксировать запросы к внешнему API через Nuxt server routes?",
+    "answer": "Запросы проксируют через `server/api`, скрывают секреты в `runtimeConfig`, валидируют входные данные и ограничивают CORS/методы для защиты.",
+    "tags": ["security", "server-routes", "api"],
+    "level": "hard"
+  },
+  {
+    "id": "nuxt-026",
+    "topic": "nuxt",
+    "question": "Как избежать дублирующихся запросов и лишней гидратации данных между сервером и клиентом?",
+    "answer": "Нужно стабильно использовать ключи `useAsyncData/useFetch`, дедупликацию, кэширование и следить, чтобы одинаковые запросы не запускались в нескольких местах одновременно.",
+    "tags": ["performance", "hydration", "data-fetching"],
+    "level": "hard"
+  }
+]

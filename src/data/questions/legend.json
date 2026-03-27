@@ -1,0 +1,274 @@
+[
+  {
+    "id": "legend-001",
+    "topic": "legend",
+    "question": "Опишите процесс разработки от получения задачи до ее попадания в прод?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["process", "delivery"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-002",
+    "topic": "legend",
+    "question": "Каким task-трекером пользовались (Jira, YouTrack)? Насколько детально были расписаны задачи? Кто отвечал за ТЗ - продакт, аналитик, тимлид? Какие инструменты разработки использовали ежедневно?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["process", "tools"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-003",
+    "topic": "legend",
+    "question": "Как проходили планирование спринтов? Участвовали ли вы в оценке задач? Были ли случаи, когда вы предлагали изменить требования задачи? С каким результатом?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["agile", "planning"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-004",
+    "topic": "legend",
+    "question": "Опишите структуру команды: роли, количество фронтендеров, бэкендеров, дизайнеров, QA. С кем из них вы взаимодействовали плотнее всего?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["teamwork"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-005",
+    "topic": "legend",
+    "question": "Как было организовано взаимодействие с бэкенд-разработчиками? Как согласовывали API? Как вы работали с API, которое еще не готово? (моки, контракты, swagger)?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["api", "backend"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-006",
+    "topic": "legend",
+    "question": "Как работали с дизайнерами? Где делались макеты (Figma)? Участвовали ли в обсуждении макетов, вносили ли правки по UI/UX?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["design", "ui-ux"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-007",
+    "topic": "legend",
+    "question": "Как в команде делились знаниями? Проводили ли регулярные митапы, демо, презентации?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["teamwork", "knowledge-sharing"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-008",
+    "topic": "legend",
+    "question": "Как решались технические споры в команде (например, выбор библиотеки или архитектуры)?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["architecture", "teamwork"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-009",
+    "topic": "legend",
+    "question": "Были ли ретроспективы? Приведите пример изменений, которые внедрили по итогам ретро.",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["agile", "retrospective"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-010",
+    "topic": "legend",
+    "question": "Было ли code-review? Как выглядел процесс? Какие аспекты проверяли чаще всего?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["code-review", "quality"],
+    "level": "easy"
+  },
+  {
+    "id": "legend-011",
+    "topic": "legend",
+    "question": "Что последнего вы писали в комментариях к ревью коллеге? Что последнего писали вам?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["code-review", "communication"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-012",
+    "topic": "legend",
+    "question": "Как вы обеспечивали качество кода, помимо код-ревью? Использовали ли линтеры, статический анализ?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["quality", "linting"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-013",
+    "topic": "legend",
+    "question": "Как вы тестировали свою работу? Писали ли юнит-тесты, участвовали ли в приемочном тестировании?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["testing", "qa"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-014",
+    "topic": "legend",
+    "question": "Расскажите о вашем опыте работы с Docker и CI/CD. Насколько вы были вовлечены в процессы деплоя?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["devops", "ci-cd"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-015",
+    "topic": "legend",
+    "question": "Были ли в проекте проблемы с производительностью? Как вы участвовали в их выявлении и решении?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["performance", "debugging"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-016",
+    "topic": "legend",
+    "question": "Приведите пример, когда вам пришлось работать с легаси-кодом. Как вы в нем разбирались?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["legacy", "refactoring"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-017",
+    "topic": "legend",
+    "question": "Приходилось ли работать с legacy-кодом? Занимались ли рефакторингом или миграцией на новый стек/версию?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["legacy", "migration"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-018",
+    "topic": "legend",
+    "question": "Как вы оценивали сроки выполнения задач? Случались ли задержки и как вы о них коммуницировали?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["estimation", "communication"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-019",
+    "topic": "legend",
+    "question": "Расскажите о вашем опыте менторства или помощи менее опытным коллегам?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["mentoring", "teamwork"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-020",
+    "topic": "legend",
+    "question": "Опишите ситуацию конфликта в команде. Какую роль вы в ней играли?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["conflict", "teamwork"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-021",
+    "topic": "legend",
+    "question": "Почему вы рассматриваете новую возможность сейчас?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["career", "motivation"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-022",
+    "topic": "legend",
+    "question": "Какие задачи вам больше всего нравились на прошлом месте, а какие - меньше?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["career", "motivation"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-023",
+    "topic": "legend",
+    "question": "Что для вас самое важное в следующем месте работы? (процессы, технологии, команда, продукты)",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["career", "priorities"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-024",
+    "topic": "legend",
+    "question": "Где вы видите себя через 2-3 года? Какие навыки хотите развить?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["career", "growth"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-025",
+    "topic": "legend",
+    "question": "Как происходила работа с ветками?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["git", "workflow"],
+    "level": "medium"
+  },
+  {
+    "id": "legend-026",
+    "topic": "legend",
+    "question": "Какой был факап на работе? Какие выводы сделал, как решил его?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["incident", "ownership"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-027",
+    "topic": "legend",
+    "question": "Как вы принимаете архитектурные решения в проекте?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["architecture", "decision-making"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-028",
+    "topic": "legend",
+    "question": "Какие метрики или показатели вы используете, чтобы понять, что фронтенд работает хорошо?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["metrics", "quality"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-029",
+    "topic": "legend",
+    "question": "Что бы вы улучшили в текущем проекте, если бы у вас было 2-3 месяца без давления сроков?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["strategy", "improvement"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-030",
+    "topic": "legend",
+    "question": "Как вы узнавали о проблемах в production? (Sentry, логи, метрики, обращения пользователей)?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["production", "monitoring"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-031",
+    "topic": "legend",
+    "question": "Приведите пример бага в проде, который вы нашли и исправили. Как предотвратили подобное в будущем?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["production", "bugfix", "prevention"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-032",
+    "topic": "legend",
+    "question": "С какими сложными или интересными задачами вы сталкивались?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["experience", "problem-solving"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-033",
+    "topic": "legend",
+    "question": "Что вы нового узнали в последнее время? Откуда черпаете информацию? Какие ресурсы используете?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["learning", "growth"],
+    "level": "hard"
+  },
+  {
+    "id": "legend-034",
+    "topic": "legend",
+    "question": "Какими AI инструментами вы пользуетесь?",
+    "answer": "Тут как-нибудь сам :)",
+    "tags": ["ai", "tools"],
+    "level": "hard"
+  }
+]

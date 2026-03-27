@@ -7,7 +7,7 @@ interface SessionSnapshot {
   currentQuestionId: string | null
 }
 
-const TOPIC_FILTER_SET = new Set<TopicFilter>(['vue', 'javascript', 'typescript', 'react', 'browser_networks', 'CONSTRUCTOR'])
+const TOPIC_FILTER_SET = new Set<TopicFilter>(['vue', 'nuxt', 'legend', 'javascript', 'typescript', 'react', 'browser_networks', 'CONSTRUCTOR'])
 
 function isTopicFilter(value: unknown): value is TopicFilter {
   return typeof value === 'string' && TOPIC_FILTER_SET.has(value as TopicFilter)
