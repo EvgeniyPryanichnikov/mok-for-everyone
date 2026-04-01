@@ -1,4 +1,5 @@
-export const TOPICS = ['vue', 'nuxt', 'javascript', 'typescript', 'react', 'browser_networks', 'legend'] as const
+// React временно отключен
+export const TOPICS = ['vue', 'nuxt', 'javascript', 'typescript', 'browser_networks', 'legend'] as const
 
 export type Topic = (typeof TOPICS)[number]
 export type TopicFilter = Topic | 'CONSTRUCTOR'

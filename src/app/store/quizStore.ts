@@ -23,7 +23,6 @@ const topicLabels: Record<Topic, string> = {
   legend: 'Легенда',
   javascript: 'JavaScript',
   typescript: 'TypeScript',
-  react: 'React',
   browser_networks: 'Браузер и сети',
 }
 const currentTopicTitle = computed(() => {

@@ -23,7 +23,7 @@ const topicLabels: Record<TopicFilter, string> = {
   legend: 'Легенда',
   javascript: 'JavaScript',
   typescript: 'TypeScript',
-  react: 'React',
+  // react: 'React',
   browser_networks: 'Браузер и сети',
   CONSTRUCTOR: 'Конструктор Мока',
 }
@@ -45,7 +45,7 @@ const topicLabels: Record<TopicFilter, string> = {
           'javascript-chip': topic === 'javascript',
           'typescript-chip': topic === 'typescript',
           'constructor-chip': topic === 'CONSTRUCTOR',
-          'react-chip': topic === 'react',
+          // 'react-chip': topic === 'react',
           'browser-networks-chip': topic === 'browser_networks',
         }"
         @click="emit('selectTopic', topic)"
@@ -70,7 +70,7 @@ const topicLabels: Record<TopicFilter, string> = {
                 'legend-chip': topic === 'legend',
                 'javascript-chip': topic === 'javascript',
                 'typescript-chip': topic === 'typescript',
-                'react-chip': topic === 'react',
+                // 'react-chip': topic === 'react',
                 'browser-networks-chip': topic === 'browser_networks',
               }"
             @click="emit('toggleConstructorTopic', topic)"
