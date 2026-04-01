@@ -52,6 +52,34 @@
   margin-bottom: 0.75rem;
 }
 
+.panel-title-topic {
+  margin-left: 0.25rem;
+}
+
+.panel-title-topic-vue {
+  color: #166f46;
+}
+
+.panel-title-topic-nuxt {
+  color: #0b5c41;
+}
+
+.panel-title-topic-legend {
+  color: #3b1a7f;
+}
+
+.panel-title-topic-javascript {
+  color: #7a5b00;
+}
+
+.panel-title-topic-typescript {
+  color: #1d54a6;
+}
+
+.panel-title-topic-browser_networks {
+  color: #273561;
+}
+
 .btn {
   border: none;
   border-radius: 12px;

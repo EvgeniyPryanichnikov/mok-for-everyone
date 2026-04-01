@@ -39,7 +39,12 @@ watch(
   <section class="panel">
     <h2 class="panel-title">
       Вопросы по теме:
-      {{ topicTitle }}
+      <span
+        class="panel-title-topic"
+        :class="currentQuestion ? `panel-title-topic-${currentQuestion.topic}` : ''"
+      >
+        {{ topicTitle }}
+      </span>
     </h2>
 
     <div v-if="currentQuestion">
