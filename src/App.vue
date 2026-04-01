@@ -3,11 +3,13 @@ import { useQuizStore } from '@/app/store/quizStore'
 import QuestionCardWidget from '@/widgets/question-card/ui/QuestionCardWidget.vue'
 import ReviewPanelWidget from '@/widgets/review-panel/ui/ReviewPanelWidget.vue'
 import TopicSelectorWidget from '@/widgets/topic-selector/ui/TopicSelectorWidget.vue'
+import ListQuestionsWidget from '@/widgets/list-questions/ui/ListQuestionsWidget.vue'
 
 const store = useQuizStore()
 const {
   availableTopics,
   baseTopics,
+  allQuestions,
   constructorTopics,
   isConstructorPanelOpen,
   canStartConstructorMock,
@@ -62,6 +64,8 @@ const {
         @export-pdf="store.exportRepeatPdf"
         @clear-repeat="store.clearRepeatQuestions"
       />
+
+      <ListQuestionsWidget :topics="baseTopics" :all-questions="allQuestions" />
     </main>
   </div>
 </template>
