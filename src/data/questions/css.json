@@ -1,0 +1,194 @@
+[
+  {
+    "id": "css-001",
+    "topic": "css",
+    "question": "Что такое каскад в CSS и как определяется итоговый стиль элемента?",
+    "answer": "Итоговый стиль формируется из каскада: важность правила (!important), специфичность селектора, порядок объявления и наследование.",
+    "tags": ["cascade", "specificity"],
+    "level": "easy"
+  },
+  {
+    "id": "css-002",
+    "topic": "css",
+    "question": "Какая разница между class, id и атрибутными селекторами?",
+    "answer": "id обычно уникален и имеет более высокую специфичность, class переиспользуется для групп элементов, атрибутные селекторы выбирают элементы по наличию/значению атрибута.",
+    "tags": ["selectors", "specificity"],
+    "level": "easy"
+  },
+  {
+    "id": "css-003",
+    "topic": "css",
+    "question": "Что такое блочная и строчная модели отображения (block vs inline)?",
+    "answer": "Block-элемент занимает всю доступную ширину и начинается с новой строки, inline занимает ширину контента и не переносит строку сам по себе.",
+    "tags": ["layout", "display"],
+    "level": "easy"
+  },
+  {
+    "id": "css-004",
+    "topic": "css",
+    "question": "Что такое box model в CSS?",
+    "answer": "Box model включает content, padding, border и margin; финальный размер элемента зависит от box-sizing.",
+    "tags": ["box-model"],
+    "level": "easy"
+  },
+  {
+    "id": "css-005",
+    "topic": "css",
+    "question": "В чем разница между position: relative, absolute, fixed и sticky?",
+    "answer": "relative смещает элемент относительно его обычной позиции, absolute позиционирует относительно ближайшего позиционированного предка, fixed фиксирует к viewport, sticky ведет себя как relative до порога и затем как fixed в пределах контейнера.",
+    "tags": ["positioning", "layout"],
+    "level": "easy"
+  },
+  {
+    "id": "css-006",
+    "topic": "css",
+    "question": "Когда использовать Flexbox, а когда Grid?",
+    "answer": "Flexbox удобен для одномерного layout (строка или колонка), Grid — для двумерной сетки с управлением и строками, и колонками.",
+    "tags": ["flexbox", "grid", "layout"],
+    "level": "easy"
+  },
+  {
+    "id": "css-007",
+    "topic": "css",
+    "question": "Что такое BEM и зачем он нужен?",
+    "answer": "BEM — методология именования классов (Block, Element, Modifier), которая уменьшает конфликт стилей и упрощает поддержку больших UI.",
+    "tags": ["bem", "architecture"],
+    "level": "easy"
+  },
+  {
+    "id": "css-008",
+    "topic": "css",
+    "question": "Как работают медиа-запросы и что такое mobile-first подход?",
+    "answer": "Media queries позволяют применять стили в зависимости от условий (ширина, тип устройства и т.д.), mobile-first означает базовые стили для мобильных и расширение через min-width.",
+    "tags": ["responsive", "media-queries"],
+    "level": "easy"
+  },
+  {
+    "id": "css-009",
+    "topic": "css",
+    "question": "Что такое CSS-переменные (custom properties) и их плюсы?",
+    "answer": "CSS-переменные объявляются как --name и используются через var(); помогают централизовать тему, уменьшить дубли и удобно переключать цвета/размеры.",
+    "tags": ["css-variables", "theming"],
+    "level": "medium"
+  },
+  {
+    "id": "css-010",
+    "topic": "css",
+    "question": "Как работает z-index и почему он иногда не срабатывает?",
+    "answer": "z-index работает внутри stacking context; если элемент в другом контексте наложения, более высокий z-index может не перекрыть соседей из другого context.",
+    "tags": ["z-index", "stacking-context"],
+    "level": "medium"
+  },
+  {
+    "id": "css-011",
+    "topic": "css",
+    "question": "Что такое stacking context и что его создает?",
+    "answer": "Stacking context — отдельный контекст наложения, который создают, например, position с z-index, opacity < 1, transform, filter, will-change и некоторые другие свойства.",
+    "tags": ["stacking-context", "z-index"],
+    "level": "medium"
+  },
+  {
+    "id": "css-012",
+    "topic": "css",
+    "question": "Какая разница между visibility: hidden, opacity: 0 и display: none?",
+    "answer": "display: none удаляет элемент из потока, visibility: hidden оставляет место, но скрывает, opacity: 0 делает прозрачным, сохраняя место и интерактивность (если не отключить pointer-events).",
+    "tags": ["rendering", "visibility"],
+    "level": "medium"
+  },
+  {
+    "id": "css-013",
+    "topic": "css",
+    "question": "Что такое псевдоклассы и псевдоэлементы, в чем разница?",
+    "answer": "Псевдоклассы описывают состояние элемента (:hover, :focus, :nth-child), псевдоэлементы стилизуют часть элемента (::before, ::after, ::placeholder).",
+    "tags": ["selectors", "pseudo-classes", "pseudo-elements"],
+    "level": "medium"
+  },
+  {
+    "id": "css-014",
+    "topic": "css",
+    "question": "Что такое contain, will-change и когда их использовать?",
+    "answer": "contain ограничивает влияние рендера элемента на остальную страницу, will-change заранее подсказывает браузеру, какие свойства будут меняться; использовать нужно точечно, иначе можно ухудшить производительность.",
+    "tags": ["performance", "rendering"],
+    "level": "medium"
+  },
+  {
+    "id": "css-015",
+    "topic": "css",
+    "question": "Как оптимизировать CSS для производительности рендера?",
+    "answer": "Минимизировать тяжелые селекторы, снижать глубину вложенности, избегать лишних reflow/repaint-триггеров, анимировать transform/opacity, удалять неиспользуемый CSS и критические стили загружать приоритетно.",
+    "tags": ["performance", "rendering"],
+    "level": "medium"
+  },
+  {
+    "id": "css-021",
+    "topic": "css",
+    "question": "Что такое reflow (layout) и почему он дорогой?",
+    "answer": "Reflow (layout) — это перерасчет геометрии элементов: размеров и позиций в документе. Он дорогой, потому что может затрагивать большую часть дерева и вызывать каскадные пересчеты соседних узлов.",
+    "tags": ["performance", "reflow", "layout"],
+    "level": "medium"
+  },
+  {
+    "id": "css-022",
+    "topic": "css",
+    "question": "Что такое repaint и чем он отличается от reflow?",
+    "answer": "Repaint — это перерисовка пикселей без изменения геометрии (например, color/background). Reflow меняет layout и обычно тянет за собой repaint, поэтому чаще затратнее, чем repaint сам по себе.",
+    "tags": ["performance", "repaint", "reflow", "rendering"],
+    "level": "medium"
+  },
+  {
+    "id": "css-023",
+    "topic": "css",
+    "question": "Как избегать лишних reflow в интерфейсе?",
+    "answer": "Стараться батчить чтения и записи в DOM, не вызывать принудительный layout в циклах, уменьшать влияние изменений на соседние элементы, использовать contain и избегать частых изменений геометрии (width/height/top/left).",
+    "tags": ["performance", "reflow", "layout", "optimization"],
+    "level": "medium"
+  },
+  {
+    "id": "css-024",
+    "topic": "css",
+    "question": "Как уменьшить repaint и сделать анимации плавнее?",
+    "answer": "Анимировать в первую очередь transform и opacity, избегать тяжелых эффектов на больших областях (например, сложных теней/фильтров), сокращать количество перекрашиваемых элементов и использовать will-change точечно.",
+    "tags": ["performance", "repaint", "animation", "optimization"],
+    "level": "medium"
+  },
+  {
+    "id": "css-016",
+    "topic": "css",
+    "question": "Что такое critical CSS и зачем он нужен?",
+    "answer": "Critical CSS — минимальный набор стилей для первого экрана, встроенный в head; ускоряет FCP/LCP, потому что важные стили применяются до загрузки полного CSS.",
+    "tags": ["performance", "critical-css"],
+    "level": "medium"
+  },
+  {
+    "id": "css-017",
+    "topic": "css",
+    "question": "Какие современные единицы измерения полезны для адаптивности (rem, vw, vh, clamp)?",
+    "answer": "rem удобно для масштабирования от базового шрифта, vw/vh — для относительных размеров от viewport, clamp(min, preferred, max) позволяет гибко ограничивать адаптивные значения.",
+    "tags": ["responsive", "units", "clamp"],
+    "level": "medium"
+  },
+  {
+    "id": "css-018",
+    "topic": "css",
+    "question": "Что такое container queries и чем они отличаются от media queries?",
+    "answer": "Media queries смотрят на viewport, а container queries — на размер конкретного контейнера компонента, что делает адаптивность более компонентной и переиспользуемой.",
+    "tags": ["responsive", "container-queries", "media-queries"],
+    "level": "hard"
+  },
+  {
+    "id": "css-019",
+    "topic": "css",
+    "question": "Почему не стоит злоупотреблять !important и какие есть альтернативы?",
+    "answer": "Избыточный !important ломает предсказуемость каскада и усложняет поддержку. Лучше управлять специфичностью, порядком подключения и архитектурой стилей (BEM, слоями, CSS Modules).",
+    "tags": ["cascade", "specificity", "important"],
+    "level": "hard"
+  },
+  {
+    "id": "css-020",
+    "topic": "css",
+    "question": "Как предотвращать layout shift (CLS) на уровне CSS?",
+    "answer": "Задавать размеры медиа заранее, резервировать место под динамический контент, использовать font-display осознанно, избегать внезапных вставок сверху и стабильнее проектировать skeleton/placeholder.",
+    "tags": ["performance", "cls", "web-vitals"],
+    "level": "hard"
+  }
+]

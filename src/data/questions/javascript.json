@@ -160,6 +160,14 @@
     "level": "medium"
   },
   {
+    "id": "js-027",
+    "topic": "javascript",
+    "question": "Какие статические методы есть у Promise и для каких задач они нужны?",
+    "answer": "Promise\nall() — возвращает промис. Результат — массив результатов, если ВСЕ промисы выполнились успешно.\n\nallSettled() — возвращает промис. Результат — массив объектов (status, value, reason) после завершения ВСЕХ промисов, независимо от успеха/ошибки.\n\nany() — возвращает промис. Результат — значение первого УСПЕШНОГО промиса, если такой есть; если все отклонятся — ошибка AggregateError.\n\nrace() — возвращает промис. Результат — первый завершившийся промис (успешно или с ошибкой).\n\nreject() — статический метод для создания уже отклоненного промиса с переданной ошибкой.\n\nresolve() — статический метод для оборачивания значения или другого промиса в уже успешно завершенный промис.\n\ntry() — в некоторых библиотеках (например, Bluebird) Promise.try(func) выполняет любую функцию и оборачивает результат/ошибку в промис.\n\nwithResolvers() — экспериментальный/расширенный API (например, в некоторых реализациях), который возвращает объект { promise, resolve, reject }, чтобы удобно создавать промис и управлять им снаружи.",
+    "tags": ["promise", "static-methods"],
+    "level": "medium"
+  },
+  {
     "id": "js-018",
     "topic": "javascript",
     "question": "Что такое генераторы? Где встречаются?",
@@ -189,6 +197,46 @@
     "question": "Что такое IntersectionObserver и ResizeObserver? Где применяются?",
     "answer": "IntersectionObserver отслеживает видимость элемента, ResizeObserver — изменение размеров. Используют для lazy load, аналитики и адаптивных компонентов.",
     "tags": ["observer", "browser-api"],
+    "level": "medium"
+  },
+  {
+    "id": "js-028",
+    "topic": "javascript",
+    "question": "Что такое debounce и где его применяют?",
+    "answer": "Debounce откладывает выполнение функции до тех пор, пока не пройдет заданный интервал без новых вызовов. Часто применяют для поиска по вводу, автосохранения и событий resize.",
+    "tags": ["performance", "debounce", "events"],
+    "level": "medium"
+  },
+  {
+    "id": "js-029",
+    "topic": "javascript",
+    "question": "Что такое throttling и чем он отличается от debounce?",
+    "answer": "Throttling ограничивает частоту вызова функции (например, не чаще 1 раза в 200 мс), даже если событие срабатывает очень часто. В отличие от debounce, throttling выполняет функцию регулярно в течение потока событий.",
+    "tags": ["performance", "throttling", "debounce", "events"],
+    "level": "medium"
+  },
+  {
+    "id": "js-030",
+    "topic": "javascript",
+    "question": "Какие области видимости есть в JavaScript?",
+    "answer": "Основные области видимости: глобальная, функциональная и блочная. var имеет функциональную область, а let/const — блочную. Также каждая функция создает собственное лексическое окружение.",
+    "tags": ["scope", "variables"],
+    "level": "medium"
+  },
+  {
+    "id": "js-031",
+    "topic": "javascript",
+    "question": "Что такое hoisting в JavaScript?",
+    "answer": "Hoisting — это поведение, при котором объявления переменных и функций поднимаются в начало своей области видимости на этапе компиляции. Function Declaration доступна до строки объявления, var поднимается как undefined, а let/const находятся в temporal dead zone до фактической инициализации.",
+    "tags": ["hoisting", "scope"],
+    "level": "medium"
+  },
+  {
+    "id": "js-032",
+    "topic": "javascript",
+    "question": "Расскажи про Event Loop.",
+    "answer": "Event Loop — это механизм, который позволяет JavaScript выполнять асинхронный код в одном потоке. Сначала выполняется текущий call stack (синхронный код), затем движок обрабатывает microtask queue, и только после этого берет задачи из macrotask queue. После каждой macrotask снова полностью очищаются microtasks. На собеседовании важно подчеркнуть порядок: stack -> microtasks -> macrotasks. Как создать микрозадачу: Promise.resolve().then(...), queueMicrotask(...), а в Node.js еще process.nextTick(...). Как создать макрозадачу: setTimeout(...), setInterval(...), postMessage(...), MessageChannel, I/O/callback API браузера или Node.",
+    "tags": ["event-loop", "microtask", "macrotask", "async"],
     "level": "medium"
   },
   {

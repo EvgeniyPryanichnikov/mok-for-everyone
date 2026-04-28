@@ -20,6 +20,7 @@ const canStartConstructorMock = computed(() => constructorTopics.value.length > 
 const topicLabels: Record<Topic, string> = {
   vue: 'Vue',
   nuxt: 'Nuxt',
+  css: 'CSS',
   legend: 'Легенда',
   javascript: 'JavaScript',
   typescript: 'TypeScript',

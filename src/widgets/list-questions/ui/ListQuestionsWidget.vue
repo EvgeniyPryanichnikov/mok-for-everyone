@@ -17,6 +17,7 @@ const props = defineProps<{
 const topicLabels: Record<Topic, string> = {
   vue: 'Vue',
   nuxt: 'Nuxt',
+  css: 'CSS',
   legend: 'Легенда',
   javascript: 'JavaScript',
   typescript: 'TypeScript',
@@ -80,6 +81,7 @@ function toggleOpen(): void {
               active: activeTopic === topic,
               'vue-chip': topic === 'vue',
               'nuxt-chip': topic === 'nuxt',
+              'css-chip': topic === 'css',
               'legend-chip': topic === 'legend',
               'javascript-chip': topic === 'javascript',
               'typescript-chip': topic === 'typescript',

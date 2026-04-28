@@ -64,6 +64,10 @@
   color: #0b5c41;
 }
 
+.panel-title-topic-css {
+  color: #0b5b6d;
+}
+
 .panel-title-topic-legend {
   color: #3b1a7f;
 }
@@ -302,6 +306,20 @@
   background: linear-gradient(180deg, #d9f8ec 0%, #c2f2e1 100%);
   color: #0b5c41;
   box-shadow: inset 0 0 0 1px rgba(11, 92, 65, 0.14);
+}
+
+.css-chip {
+  border-color: #8fd6e6;
+  background: #eef9fd;
+  color: #0d6780;
+  font-weight: 700;
+}
+
+.css-chip.active {
+  border-color: #29a8cf;
+  background: linear-gradient(180deg, #d9f1fa 0%, #c2e9f7 100%);
+  color: #0b5b6d;
+  box-shadow: inset 0 0 0 1px rgba(11, 91, 109, 0.14);
 }
 
 .legend-chip {
