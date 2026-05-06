@@ -68,6 +68,10 @@
   color: #0b5b6d;
 }
 
+.panel-title-topic-git {
+  color: #9a3412;
+}
+
 .panel-title-topic-legend {
   color: #3b1a7f;
 }
@@ -320,6 +324,20 @@
   background: linear-gradient(180deg, #d9f1fa 0%, #c2e9f7 100%);
   color: #0b5b6d;
   box-shadow: inset 0 0 0 1px rgba(11, 91, 109, 0.14);
+}
+
+.git-chip {
+  border-color: #f5b28d;
+  background: #fff4ee;
+  color: #b44917;
+  font-weight: 700;
+}
+
+.git-chip.active {
+  border-color: #f06a2f;
+  background: linear-gradient(180deg, #ffe3d6 0%, #ffd2bf 100%);
+  color: #9a3412;
+  box-shadow: inset 0 0 0 1px rgba(154, 52, 18, 0.14);
 }
 
 .legend-chip {

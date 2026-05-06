@@ -64,6 +64,14 @@
     "level": "easy"
   },
   {
+    "id": "css-025",
+    "topic": "css",
+    "question": "Какие есть способы отцентрировать блок в CSS?",
+    "answer": "Классические варианты: margin: 0 auto для горизонтального центрирования блочного элемента с заданной шириной; через Flexbox (justify-content/align-items: center); через Grid (place-items: center); а также через absolute + transform: translate(-50%, -50%) для точечного позиционирования.",
+    "tags": ["layout", "centering", "flexbox", "grid"],
+    "level": "easy"
+  },
+  {
     "id": "css-009",
     "topic": "css",
     "question": "Что такое CSS-переменные (custom properties) и их плюсы?",

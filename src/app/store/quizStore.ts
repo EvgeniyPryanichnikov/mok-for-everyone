@@ -21,6 +21,7 @@ const topicLabels: Record<Topic, string> = {
   vue: 'Vue',
   nuxt: 'Nuxt',
   css: 'CSS',
+  git: 'Git',
   legend: 'Легенда',
   javascript: 'JavaScript',
   typescript: 'TypeScript',
